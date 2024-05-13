@@ -1,23 +1,6 @@
 <!DOCTYPE html>
 <head>
 <style>
-/*
-    .section1{grid-area: header;}
-    .section2{grid-area: section2;}
-    .section3{grid-area: section3;}
-    .main{grid-area: main;}
-    .footer{grid-area: footer;}
-    .extra{grid-area: extra;}
-    .posts{grid-area: posts;}
-    .images{grid-area: images;}
-    .gridcontainer > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;}
-  .gridcontainer{
-
-  }*/
 .gridcontainer{
     display: grid;
     grid-template-columns: repeat(12,100px);
@@ -30,17 +13,13 @@
     background-color: aqua;
     text-align: center;
     grid-column: 1/-1;
-    
-
 }
 .section2{
     display: grid;
     background-color: grey;
     grid-column: 6/1;
     grid-row: 2/5;
-    
     text-align: center;
-    
 }
 .section3{
     display: grid;
@@ -48,7 +27,6 @@
     grid-column: 6/1;
     grid-row: 8/5;
     text-align: center;    
-    
 }
 .main{
     
@@ -70,28 +48,21 @@
     display: grid;
     background-color: red;
     grid-column: 1/10;
-    
     text-align: center;
 }
 .posts{
     display: grid;
     background-color: yellow;
     grid-column: 10/13;
-    
     text-align: center;
 }
 .footer{
     display: grid;
     background-color: grey;
     grid-column: 1/-1;
-    
     text-align: center;
 }
-
-
 </style>
-
-
 </head>
 <div class="gridcontainer">
 <body>
@@ -104,8 +75,4 @@
 <div class="posts">related posts</div>
 <div class="footer">footer</div>
 </div>
-
-
-
-
 </body>
