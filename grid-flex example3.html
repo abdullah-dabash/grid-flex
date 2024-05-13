@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    text-align: center;
+    display: grid;
+    background-color:  aqua;
+    grid-template-columns: repeat(12, 100px);
+    grid-template-rows: repeat(12, 100px);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.header {
+    display: grid;
+    background-color: blue;
+    text-align: center;
+    grid-column: 1/9;
+}
+
+.aside {
+    display: grid;
+    background-color: yellow;
+    grid-column: 1/3;
+    grid-row: 2/5;
+    text-align: center;
+}
+
+.article {
+    display: grid;
+    background-color: yellow;
+    grid-column: 3/9;
+    grid-row: 2/5;
+    text-align: center;
+}
+
+.footer {
+    display: grid;
+    background-color: blue;
+    grid-column: 1/9;
+    text-align: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: end; 
+    column-gap: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.img1 {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="aside">A side</div>
+        <div class="article">
+            Article
+            <div class="img-container">
+                <img class="img1" src="C:\Users\Orange\Desktop\New folder\profile.jpg">
+                <img class="img1" src="C:\Users\Orange\Desktop\New folder\profile.jpg">
+                <img class="img1" src="C:\Users\Orange\Desktop\New folder\profile.jpg">
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
