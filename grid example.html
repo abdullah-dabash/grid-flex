@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+<style>
+/*
+    .section1{grid-area: header;}
+    .section2{grid-area: section2;}
+    .section3{grid-area: section3;}
+    .main{grid-area: main;}
+    .footer{grid-area: footer;}
+    .extra{grid-area: extra;}
+    .posts{grid-area: posts;}
+    .images{grid-area: images;}
+    .gridcontainer > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;}
+  .gridcontainer{
+
+  }*/
+.gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(12,100px);
+    grid-template-rows : repeat(12,100px);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+.section1{
+    display: grid;
+    background-color: aqua;
+    text-align: center;
+    grid-column: 1/-1;
+    
+
+}
+.section2{
+    display: grid;
+    background-color: grey;
+    grid-column: 6/1;
+    grid-row: 2/5;
+    
+    text-align: center;
+    
+}
+.section3{
+    display: grid;
+    background-color: green;
+    grid-column: 6/1;
+    grid-row: 8/5;
+    text-align: center;    
+    
+}
+.main{
+    
+    display: grid;
+    background-color: palegoldenrod;
+    grid-column: 6/13;
+    grid-row: 6/2;
+    text-align: center;
+}
+
+.extra{
+    display: grid;
+    background-color: grey;
+    grid-column: 6/13;
+    grid-row: 6/8;
+    text-align: center;
+}
+.images{
+    display: grid;
+    background-color: red;
+    grid-column: 1/10;
+    
+    text-align: center;
+}
+.posts{
+    display: grid;
+    background-color: yellow;
+    grid-column: 10/13;
+    
+    text-align: center;
+}
+.footer{
+    display: grid;
+    background-color: grey;
+    grid-column: 1/-1;
+    
+    text-align: center;
+}
+
+
+</style>
+
+
+</head>
+<div class="gridcontainer">
+<body>
+<div class="section1">section 1</div>
+<div class="section2">section 2</div>
+<div class="section3">section 3</div>
+<div class="main">main content</div>
+<div class="extra">extra content</div>
+<div class="images">related images</div>
+<div class="posts">related posts</div>
+<div class="footer">footer</div>
+</div>
+
+
+
+
+</body>
